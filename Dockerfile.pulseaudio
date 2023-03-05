@@ -1,4 +1,4 @@
-#An extra layer to get around this bug https://github.com/docker/buildx/issues/395
+#An extra layer to get around this bug https://github.com/docker/buildx/iss ues/395
 #It's there simply to download add required libraries for cargo build 
 FROM --platform=$BUILDPLATFORM rust:1.67.0-buster AS rust_fix
 
