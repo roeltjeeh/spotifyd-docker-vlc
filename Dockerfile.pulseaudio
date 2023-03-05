@@ -5,6 +5,7 @@ FROM --platform=$BUILDPLATFORM rust:1.67.0-buster AS rust_fix
 ENV USER=root
 ENV V_spotifyd=v0.3.4
 
+RUN mkdir -p /home/
 WORKDIR /usr/src/spotifyd
 RUN apt-get -y update && \
     apt-get install --no-install-recommends -y apt-transport-https ca-certificates git && \
